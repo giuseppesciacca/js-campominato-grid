@@ -5,18 +5,18 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 const rowEl = document.querySelector('.row');
 
-let numSquare = 100;
-let i = 0;
-while (i < numSquare) {
+let numSquare = 100; //mettere numero attraverso select
+
+for (let i = 0; i < numSquare; i++) {
     const squareEl = document.createElement('div');
-    squareEl.classList.add('col_my');
+    squareEl.classList.add('col_my', 'd-flex', 'align-items-center', 'justify-content-center', 'fs-5');
 
     rowEl.append(squareEl);
+    squareEl.innerHTML = `<span> ${i + 1} </span>`;
 
-    //al click, coloro
+    //al click, coloro;
     squareEl.addEventListener('click', function () {
-        squareEl.classList.toggle('active');
+        this.classList.toggle('active');
+        console.log(this);
     });
-
-    i++;
-};
+}
