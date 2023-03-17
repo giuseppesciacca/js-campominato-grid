@@ -20,9 +20,20 @@ body {
 }
 
 .col_my {
-    width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     border: 2px solid white;
+}
+
+.col_my_ez {
+    width: calc(100% / 10);
+}
+
+.col_my_md {
+    width: calc(100% / 9);
+}
+
+.col_my_hd {
+    width: calc(100% / 7);
 }
 
 #app_footer {
