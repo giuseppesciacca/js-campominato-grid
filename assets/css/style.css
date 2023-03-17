@@ -25,3 +25,7 @@ body {
     height: 7.5rem;
     background-color: white;
 }
+
+.active {
+    background-color: aquamarine;
+}
