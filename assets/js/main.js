@@ -27,7 +27,7 @@ btn_play.addEventListener('click', function () {
 
     for (let i = 0; i < numSquare; i++) {
         const squareEl = document.createElement('div');
-        squareEl.classList.add('col_my', 'd-flex', 'align-items-center', 'justify-content-center', 'fs-5');
+        squareEl.classList.add('col_my', 'd-flex', 'align-items-center', 'justify-content-center');
 
         if (difficultyEl.value == 'easy') {
             squareEl.classList.add('col_my_ez')

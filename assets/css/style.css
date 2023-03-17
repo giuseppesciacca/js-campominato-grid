@@ -11,8 +11,12 @@ body {
 }
 
 #app_header {
-    height: 11.25rem;
+    min-height: 11.25rem;
     background-color: white;
+}
+
+#app_main {
+    min-height: calc(100vh - 14.25rem - 7.5rem);
 }
 
 #app_main .wrapper {
@@ -44,3 +48,11 @@ body {
 .active {
     background-color: lightblue;
 }
+
+@media screen and (max-width: 480px) {
+    #app_main {
+        font-size: 0.75rem;
+    }
+}
+
+;
