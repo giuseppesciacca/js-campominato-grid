@@ -16,7 +16,7 @@ body {
 }
 
 #app_main {
-    min-height: calc(100vh - 14.25rem - 7.5rem);
+    min-height: calc(100vh - 11.25rem - 7.5rem);
 }
 
 #app_main .wrapper {
