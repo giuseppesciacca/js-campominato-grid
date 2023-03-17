@@ -11,7 +11,7 @@ body {
 }
 
 #app_header {
-    min-height: 11.25rem;
+    height: 11.25rem;
     background-color: white;
 }
 
