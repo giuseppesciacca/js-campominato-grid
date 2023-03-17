@@ -25,13 +25,23 @@ btn_play.addEventListener('click', function () {
         numSquare = 49;
     }
 
-    for (let i = 0; i < numSquare; i++) {
+    campoMinato(numSquare);
+});
+
+
+
+/* ******* 
+FUNCTIONS
+******** */
+function campoMinato(numCells) {
+
+    for (let i = 0; i < numCells; i++) {
         const squareEl = document.createElement('div');
         squareEl.classList.add('col_my', 'd-flex', 'align-items-center', 'justify-content-center');
 
-        if (difficultyEl.value == 'easy') {
+        if (numCells == 100) {
             squareEl.classList.add('col_my_ez')
-        } else if (difficultyEl.value == 'medium') {
+        } else if (numCells == 81) {
             squareEl.classList.add('col_my_md')
         } else {
             squareEl.classList.add('col_my_hd')
@@ -39,14 +49,17 @@ btn_play.addEventListener('click', function () {
 
         rowEl.append(squareEl);
 
-
         squareEl.innerHTML = `<span> ${i + 1} </span>`;
 
         //al click, coloro + log;
-        squareEl.addEventListener('click', function () {
-            this.classList.toggle('active');
-            console.log(`Hai cliccato la cella numero ${i + 1}`);
-        });
+        colorSquare(squareEl);
     }
+}
 
-});
+//*************
+function colorSquare(element) {
+    element.addEventListener('click', function () {
+        this.classList.toggle('active');
+        console.log(`Hai cliccato la cella numero ${i + 1}`);
+    })
+}
