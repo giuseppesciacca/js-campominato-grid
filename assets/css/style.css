@@ -1,9 +1,13 @@
 :root {
     --bg-dark: #1e1e1e;
+    --font-lato: 'Lato', sans-serif;
+    --font-game: 'Odibee Sans', cursive;
+    --font-arcade: 'Press Start 2P', cursive;
 }
 
 body {
     background-color: var(--bg-dark);
+    font-family: var(--font-arcade) !important;
 }
 
 #app_header {
