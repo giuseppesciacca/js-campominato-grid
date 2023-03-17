@@ -17,6 +17,6 @@ for (let i = 0; i < numSquare; i++) {
     //al click, coloro;
     squareEl.addEventListener('click', function () {
         this.classList.toggle('active');
-        console.log(this);
+        console.log(`Hai cliccato la cella numero ${i + 1}`);
     });
 }
