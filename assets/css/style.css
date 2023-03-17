@@ -1,0 +1,27 @@
+:root {
+    --bg-dark: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-dark);
+}
+
+#app_header {
+    height: 11.25rem;
+    background-color: white;
+}
+
+#app_main .wrapper {
+    max-width: 1140px;
+}
+
+.col_my {
+    width: calc(100% / 10);
+    aspect-ratio: 1 / 1;
+    border: 2px solid white;
+}
+
+#app_footer {
+    height: 7.5rem;
+    background-color: white;
+}
