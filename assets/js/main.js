@@ -49,17 +49,16 @@ function campoMinato(numCells) {
 
         rowEl.append(squareEl);
 
-        squareEl.innerHTML = `<span> ${i + 1} </span>`;
-
         //al click, coloro + log;
-        colorSquare(squareEl);
+        colorSquare(squareEl, i);
     }
 }
 
 //*************
-function colorSquare(element) {
+function colorSquare(element, index) {
     element.addEventListener('click', function () {
         this.classList.toggle('active');
-        console.log(`Hai cliccato la cella numero ${i + 1}`);
+        console.log(`Hai cliccato la cella numero ${index + 1}`);
+        this.innerHTML = `<span> ${index + 1} </span>`;
     })
 }

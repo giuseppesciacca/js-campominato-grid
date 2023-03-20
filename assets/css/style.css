@@ -25,7 +25,8 @@ body {
 
 .col_my {
     aspect-ratio: 1 / 1;
-    border: 2px solid white;
+    border: 5px outset #fefefe;
+    background-color: #bdbdbd;
 }
 
 .col_my_ez {
@@ -46,7 +47,8 @@ body {
 }
 
 .active {
-    background-color: lightblue;
+    border: 1px solid #3f3f3f;
+    background: #a9a9a9;
 }
 
 @media screen and (max-width: 480px) {
